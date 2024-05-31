@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 export const Notification = ({ Good, Neutral, Bad, isClicked, total, positivePercentage, message }) => {
     return (
         <div>
-            {isClicked ? <Statistic Good={Good} Neutral={Neutral} Bad={Bad} total={total} positivePercentage={positivePercentage} /> : <h3>{message}</h3>}
+            {isClicked ? <Statistic Good={Good} Neutral={Neutral} Bad={Bad} total={total} positivePercentage={positivePercentage} /> : <p>{message}</p>}
         </div>
     )
 }
